@@ -17,6 +17,9 @@ then
   install-pkg freeglut3-dev
 fi
 
+mkdir bin
+mkdir obj
+
 # performs versioning, checks mtime on file to see
 # if cpp src file is modified newer than compiled binary
 #if so then move it to backup dir and remake with g++
