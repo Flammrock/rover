@@ -17,8 +17,10 @@ int main(int argc, char **argv) {
 	glScalef(10.0f, 10.0f, 10.0f);
 	glPushMatrix();
 	result = SimulationMain(argc, argv);
+#ifndef TEST
 	glutDisplayFunc(loop);
 	glutMainLoop();
+#endif
 	return result;
 }
 
