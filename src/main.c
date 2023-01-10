@@ -67,7 +67,8 @@ int SimulationMain(int argc, char **argv) {
 	if ((NULL == CU_add_test(pSuite, "max_test_1", max_test_1)) ||
 		(NULL == CU_add_test(pSuite, "max_test_2", max_test_2)) ||
 		(NULL == CU_add_test(pSuite, "max_test_3", max_test_3)) ||
-		(NULL == CU_add_test(pSuite, "max_test_4", max_test_4))) {
+		(NULL == CU_add_test(pSuite, "max_test_4", max_test_4)) ||
+		(NULL == CU_add_test(pSuite, "max_test_5", max_test_5))) {
 		CU_cleanup_registry();
 		return CU_get_error();
 	}

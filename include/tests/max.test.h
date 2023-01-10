@@ -6,5 +6,6 @@ void max_test_1(void);
 void max_test_2(void);
 void max_test_3(void);
 void max_test_4(void);
+void max_test_5(void);
 
 #endif /* TEST_MAX_H */
