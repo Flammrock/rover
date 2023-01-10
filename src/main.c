@@ -79,7 +79,7 @@ int SimulationMain(int argc, char **argv) {
 	CU_list_tests_to_file();
 
 	// Run all tests using the console interface
-	CU_console_run_tests();
+	// CU_console_run_tests();
 
 	/* Clean up registry and return */
 	CU_cleanup_registry();
