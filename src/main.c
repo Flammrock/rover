@@ -73,7 +73,8 @@ int SimulationMain(int argc, char **argv) {
 
 	// Run all tests using the basic interface
 	CU_basic_set_mode(CU_BRM_VERBOSE);
-	CU_basic_run_tests();
+	// CU_basic_run_tests();
+	CU_automated_run_tests();
 	printf("\n");
 	CU_basic_show_failures(CU_get_failure_list());
 	printf("\n\n");
@@ -108,7 +109,7 @@ EnvCell customUpdater(EnvCell ec) {
 		ec.c *= -1;
 	} else if (ec.b < 1.0f) {
 		ec.c *= -1;
-  }
+	}
 	vec2 pos = ec.cell.position;
 	ec.temperature = perlin2d(
 		pos.x + ec.a.x + 30, pos.y + ec.a.y + 5, 0.1f, 1 + ec.b * 2.0f);
